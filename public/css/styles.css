@@ -183,14 +183,12 @@ footer {
     color: white;
     font-family: 'publicText';
     text-align: center;
+    position: relative;
 }
 .teamDetails p{
     width: 60%;
     min-width: 300px;
-    margin:auto
-}
-.teamDetails {
-	position: relative;
+    margin:auto;
 }
 .teamDetails:after {
 	bottom: 100%;
@@ -205,4 +203,115 @@ footer {
 	border-bottom-color: #ef4b23;
 	border-width: 30px;
 	margin-left: -30px;
+}
+
+#t1wrapper,#t2wrapper,#t3wrapper,#t4wrapper,#t5wrapper,#t6wrapper,#t7wrapper,#t8wrapper,#t9wrapper,#t10wrapper{
+  height: 0px !important;
+  overflow: hidden;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  padding-top: 0px;
+}
+
+#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8,#t9,#t10{
+  transform: scaleY(0);    
+  transform-origin: top;
+  transition: transform 0.26s ease;
+}
+#Fengru:hover ~ #t1wrapper #t1.teamDetails{
+  transform: scaleY(1);
+}
+#Fengru:hover ~ #t1wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Max:hover ~ #t2wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Max:hover ~ #t2wrapper #t2.teamDetails{
+  transform: scaleY(1);
+}
+#t2.teamDetails:after{
+  left:38% !important;
+}
+#Rabail:hover ~ #t3wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Rabail:hover ~ #t3wrapper #t3.teamDetails{
+  transform: scaleY(1);
+}
+#t3.teamDetails:after{
+  left:62.5% !important;
+}
+#Yong:hover ~ #t4wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Yong:hover ~ #t4wrapper #t4.teamDetails{
+  transform: scaleY(1);
+}
+#t4.teamDetails:after{
+  left:87.5% !important;
+}
+#Jonathan:hover ~ #t5wrapper #t5.teamDetails{
+  transform: scaleY(1);
+}
+#Jonathan:hover ~ #t5wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+
+#Tariq:hover ~ #t6wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Tariq:hover ~ #t6wrapper #t6.teamDetails{
+  transform: scaleY(1);
+}
+#t6.teamDetails:after{
+  left:38% !important;
+}
+
+#Muhammad:hover ~ #t7wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Muhammad:hover ~ #t7wrapper #t7.teamDetails{
+  transform: scaleY(1);
+}
+#t7.teamDetails:after{
+  left:62.5% !important;
+}
+#Batool:hover ~ #t8wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Batool:hover ~ #t8wrapper #t8.teamDetails{
+  transform: scaleY(1);
+}
+#t8.teamDetails:after{
+  left:87.5% !important;
+}
+#Britt:hover ~ #t9wrapper #t9.teamDetails{
+  transform: scaleY(1);
+}
+#Britt:hover ~ #t9wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+
+#Thein:hover ~ #t10wrapper{
+  height: 440px !important;
+  padding-top: 30px;
+}
+#Thein:hover ~ #t10wrapper #t10.teamDetails{
+  transform: scaleY(1);
+}
+#t10.teamDetails:after{
+  left:38% !important;
 }
