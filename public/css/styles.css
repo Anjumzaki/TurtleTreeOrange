@@ -71,7 +71,7 @@ section div {
   padding: 0px !important;
   margin-right: 0px !important;
   margin-left: 0px !important;
-
+  margin-bottom: -6px !important;
   text-align: center !important;
   margin: auto;
   justify-content: center;
@@ -80,7 +80,8 @@ section p {
   color: "#4A4F54";
   font-family: "publicText";
   font-size: 20px;
-  line-height: 0.6rem;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .bottomLine {
   width: 100px;
@@ -88,6 +89,7 @@ section p {
   background-color: #ef4b23;
   margin: auto;
   margin-top: 70px;
+  
 }
 .row {
   margin-right: 0px !important;
@@ -343,4 +345,171 @@ footer {
 .showing10 ~ #t10wrapper {
   height: 440px !important;
   padding-top: 30px;
+}
+.underLineP{
+  width: 30%;
+  margin:auto;
+}
+.mainHeadingTop{
+  position: static;
+  margin-top: 200px;
+}
+@media only screen and (max-width: 600px) {
+  .pd-20 {
+    padding: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+  }
+  .turtleHead{
+    font-size: 40px !important;
+  }
+  .navbar-brand img{
+    width:50px !important
+  }
+  .headingFirst{
+    font-size: 100px !important;
+  }section p {
+    color: "#4A4F54";
+    font-family: "publicText";
+    font-size: 20px;
+    line-height: 1.5rem !important;
+  }
+  .content__section:first-child{
+    margin: 0 0 0 !important;
+  }
+  section div {
+    margin-bottom: 20px !important;
+  }
+  .content__text{
+    font-size: 160px !important;
+    left: 6vmax !important;
+  }
+  .underLineP{
+    width: 80%;
+    margin:auto;
+  }
+  .content__section:first-child, .content__section:last-child{
+    height: auto !important;
+  }
+  .teamCards{
+    padding: 10px !important;
+  }
+  .teamCards .name{
+    font-size: 10px;
+  }
+  .teamCards .desig{
+    font-size: 10px;
+    margin-bottom: 5px !important;
+  }
+  .mainHeadingTop{
+    margin-bottom: 100px !important;
+  }
+  .teamDetails {
+    background-color: #ef4b23;
+    padding: 10px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: "publicText";
+    text-align: center;
+    position: relative;
+    
+  }
+  .teamDetails p {
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+    font-size: 10px !important;
+  }
+  .teamDetails:after {
+    bottom: 100%;
+    left: 12.5%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #ef4b23;
+    border-width: 15px;
+    margin-left: -15px;
+  }
+  .showing1 ~ #t1wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing1 ~ #t1wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  
+  .showing2 ~ #t2wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing2 ~ #t2wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  
+  .showing3 ~ #t3wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing3 ~ #t3wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .showing4 ~ #t4wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing4 ~ #t4wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .showing5 ~ #t5wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing5 ~ #t5wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .showing6 ~ #t6wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing6 ~ #t6wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .showing7 ~ #t7wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing7 ~ #t7wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .showing8 ~ #t8wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing8 ~ #t8wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  
+  .showing9 ~ #t9wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing9 ~ #t9wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  
+  .showing10 ~ #t10wrapper .teamDetails {
+    transform: scaleY(1) !important;
+  }
+  .showing10 ~ #t10wrapper {
+    height: 250px !important;
+    padding-top: 30px;
+  }
+  .footerLogo{
+    text-align: center;
+  }
 }
