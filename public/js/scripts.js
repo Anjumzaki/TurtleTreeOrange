@@ -50,163 +50,149 @@ function isOnScreen(elem) {
       top <= viewport_top &&
       bottom >= viewport_bottom)
   );
-}
-
+    }
+    
 var oldsState = "header";
 var newState = "";
 jQuery(document).ready(function() {
   window.addEventListener("scroll", function(e) {
     if (isOnScreen(jQuery("#feed"))) {
-      /* Pass element id/class you want to check */
-      newState = "feed";
-      if (newState == oldsState) {
-        return;
-      } else {
-        oldsState = "feed";
-        $("#header").hide(100, function() {
-          $(this)
-            .html(' <div class="stickyHeader"><h1>     FEED    </h1></div>')
-            .show(100);
-        });
-      }
+      $('.content__text').css('display','block')
     } else if (isOnScreen(jQuery("#save"))) {
-      /* Pass element id/class you want to check */
-      newState = "save";
-      if (newState == oldsState) {
-        return;
-      } else {
-        oldsState = "save";
-        $("#header").hide(100, function() {
-          $(this)
-            .html('<div class="stickyHeader"><h1>     SAVE    </h1></div>')
-            .show(100);
-        });
-      }
+      $('.content__text').css('display','block')
     } else if (isOnScreen(jQuery("#scale"))) {
-      /* Pass element id/class you want to check */
-      newState = "scale";
-      if (newState == oldsState) {
-        return;
-      } else {
-        oldsState = "scale";
-        $("#header").hide(100, function() {
-          $(this)
-            .html(' <div class="stickyHeader"><h1>     SCALE    </h1></div>')
-            .show(100);
-        });
-      }
+      $('.content__text').css('display','block')
     } else if (isOnScreen(jQuery("#header"))) {
-      newState = "header";
-      if (newState == oldsState) {
-        return;
-      } else {
-        oldsState = "header";
-        $("#header").hide(100, function() {
-          $(this)
-            .html(
-              ' <div class="stickyHeader">    <h1>      Clean Milk for    </h1>    <h1>People & Planet.</h1>  </div>'
-            )
-            .show(100);
-        });
-      }
+      $('.content__text').css('display','block')
     } else {
-      oldsState = "new";
-      $("#header").html('<div class="stickyHeader"></div>');
+      console.log('i am not here')
+      $('.content__text').css('display','none')
     }
   });
 });
 
-// $("#Fengru").hover(function() {
-//   $("#t2").hide(300)
-//   $("#t3").hide(300)
-//   $("#t1").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Fengru Lin</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     );
-//   });
-//   console.log('caled')
-  
-// });
-// $("#Max").hover(function() {
-//   $("#t2").hide(300)
-//   $("#t3").hide(300)
-//   $("#t1").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Max Raye</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
- 
- 
-// });
-// $("#Rabail").hover(function() {
-//   $("#t2").hide(300)
-//   $("#t3").hide(300)
-//   $("#t1").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Dr Rabail Toor</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
- 
- 
-// });
-// $("#Yong").hover(function() {
-//   $("#t2").hide(300)
-//   $("#t3").hide(300)
-//   $("#t1").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Dr Gen Yong</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
-  
-// });
-// $("#Jonathan").hover(function() {
-//   $("#t1").hide(300)
-//   $("#t3").hide(300)
-//   $("#t2").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Dr Jonathan Loh</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
-  
-// });
-
-// $("#Tariq").hover(function() {
-//   $("#t1").hide(300)
-//   $("#t3").hide(300)
-//   $("#t2").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Maria Tariq</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
- 
-// });
-
-// $("#Muhammad").hover(function() {
-//   $("#t1").hide(300)
-//   $("#t3").hide(300)
-//   $("#t2").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Faisal Muhammad</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
-
-// });
-
-// $("#Batool").hover(function() {
-//   $("#t1").hide(300)
-//   $("#t3").hide(300)
-//   $("#t2").show(300, function() {
-//     $(this)
-//     .html(
-//       " <h4>Sana Batool</h4>  <p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  </p>"
-//     )
-//   });
-
-// });
+    $(document).ready(function() {
+      $('#name1').click(function(e) {
+        $('#name1').addClass("showing1")
+        for(let i = 2; i < 11 ; i++){
+          $('#name'+i).removeClass("showing"+i)
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name2').click(function(e) {
+        $('#name2').addClass("showing2")
+        for(let i = 1; i < 11 ; i++){
+          if(i==2){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name3').click(function(e) {
+        $('#name3').addClass("showing3")
+        for(let i = 1; i < 11 ; i++){
+          if(i==3){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name4').click(function(e) {
+        $('#name4').addClass("showing4")
+        for(let i = 1; i < 11 ; i++){
+          if(i==4){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name5').click(function(e) {
+        $('#name5').addClass("showing5")
+        for(let i = 1; i < 11 ; i++){
+          if(i==5){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name6').click(function(e) {
+        $('#name6').addClass("showing6")
+        for(let i = 1; i < 11 ; i++){
+          if(i==6){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name7').click(function(e) {
+        $('#name7').addClass("showing7")
+        for(let i = 1; i < 11 ; i++){
+          if(i==7){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name8').click(function(e) {
+        $('#name8').addClass("showing8")
+        for(let i = 1; i < 11 ; i++){
+          if(i==8){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name9').click(function(e) {
+        $('#name9').addClass("showing9")
+        for(let i = 1; i < 11 ; i++){
+          if(i==9){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $('#name10').click(function(e) {
+        $('#name10').addClass("showing10")
+        for(let i = 1; i < 11 ; i++){
+          if(i==10){
+            console.log('I am hit')
+          }
+          else{
+          $('#name'+i).removeClass("showing"+i)
+          }
+        }
+      });
+    });
