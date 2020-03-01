@@ -71,7 +71,6 @@ section div {
   padding: 0px !important;
   margin-right: 0px !important;
   margin-left: 0px !important;
-  margin-bottom: -6px !important;
   text-align: center !important;
   margin: auto;
   justify-content: center;
@@ -94,6 +93,7 @@ section p {
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;
+  margin-bottom: -6px !important;
 }
 .story {
   text-align: center;
@@ -511,5 +511,8 @@ footer {
   }
   .footerLogo{
     text-align: center;
+  }
+  .fordektop{
+    display: none;
   }
 }
