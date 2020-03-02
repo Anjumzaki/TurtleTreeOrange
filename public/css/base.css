@@ -447,12 +447,13 @@ a.demo--current {
 .content__text {
   position: absolute;
   top: 11vmax;
-  left: 33vmax;
-  padding-left: 6vmax;
   z-index: 1000;
   line-height: 0.8;
   font-size: 300px;
   color: #ef4b23;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .js .ioapi .content__text {

@@ -112,6 +112,7 @@ section p {
   font-family: "publicText";
   font-size: 16px;
   margin-top: 50px;
+  text-align: left;
 }
 .storyBottom h3 {
   font-family: "regular";
@@ -383,7 +384,6 @@ footer {
   }
   .content__text{
     font-size: 160px !important;
-    left: 6vmax !important;
   }
   .underLineP{
     width: 80%;
