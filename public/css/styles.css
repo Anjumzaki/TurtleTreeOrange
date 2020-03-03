@@ -158,9 +158,14 @@ section p {
 .teamCards .desig {
   font-family: "regular";
   font-size: 18px;
-  height: 36px;
   overflow: hidden;
   margin-bottom: 40px;
+  height: 50px;
+  text-overflow: ellipsis;
+}
+.teamCards .desig p{
+  line-height: 2rem !important;
+
 }
 .location {
   font-family: "regular";
@@ -361,7 +366,9 @@ footer {
 .forMobile{
   display: none;
 }
-
+.navbar-brand img{
+  width: 40%;
+}
 
 @media only screen and (max-width: 600px) {
   .pd-20 {
@@ -374,7 +381,7 @@ footer {
     font-size: 40px !important;
   }
   .navbar-brand img{
-    width:50px !important
+    width:200px !important
   }
   .headingFirst{
     font-size: 100px !important;
@@ -534,4 +541,5 @@ footer {
   .forMobile{
     display: block;
   }
+
 }
