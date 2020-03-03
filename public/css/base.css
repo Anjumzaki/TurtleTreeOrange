@@ -512,6 +512,7 @@ a.demo--current {
   .content__contact {
     bottom: calc(var(--fontsize-scroll-text) * 1.5 + 15vh);
   }
+
 }
 
 .teamCards input[type=checkbox] {
@@ -522,4 +523,3 @@ a.demo--current {
 .story{
   z-index: 1500 !important;
 }
-

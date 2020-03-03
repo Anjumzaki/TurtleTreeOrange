@@ -355,6 +355,14 @@ footer {
   position: static;
   margin-top: 200px;
 }
+.forDesktop{
+  display: block;
+}
+.forMobile{
+  display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
   .pd-20 {
     padding: 0px !important;
@@ -373,8 +381,13 @@ footer {
   }section p {
     color: "#4A4F54";
     font-family: "publicText";
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5rem !important;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  section:first-child {
+    padding-top: 10%;
   }
   .content__section:first-child{
     margin: 0 0 0 !important;
@@ -514,5 +527,11 @@ footer {
   }
   .fordektop{
     display: none;
+  }
+  .forDesktop{
+    display: none;
+  }
+  .forMobile{
+    display: block;
   }
 }
