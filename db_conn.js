@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 const db = {
-  host: "remotemysql.com",
-  user: "HF2sbV7fMv",
-  password: "um1x8wxAh1",
-  database: "HF2sbV7fMv",
+  host: "us-cdbr-iron-east-04.cleardb.net",
+  user: "bab72eeff1d27f",
+  password: "1c47309a",
+  database: "heroku_86d908a082005e5",
   port: 3306
 };
 // db.connect((err) => {
