@@ -34,6 +34,6 @@ app.post('/admin_edit_news_post/:id',admin_update_news_post);
 app.get('/admin_logout',admin_logout);
 setInterval(function () {
     db.query('SELECT 1');
-    console.log('query')
+    // console.log('query')
   }, 9000);
 app.listen(port);
