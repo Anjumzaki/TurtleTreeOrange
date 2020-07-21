@@ -3,11 +3,14 @@ const body_parser=require('body-parser');
 const file_upload=require('express-fileupload');
 const session=require('express-session');
 const cookieParser=require('cookie-parser');
+var favicon = require('serve-favicon')
 const path=require('path');
 const port = process.env.PORT || 5000;
 const app=express();
 require('./db_conn.js');
 var sess;
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(cookieParser());
 app.use(session({secret: "Shh, it is secrest"}));
 app.set('port', process.env.port || port); 

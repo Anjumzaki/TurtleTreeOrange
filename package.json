@@ -15,6 +15,7 @@
   "author": "Yasir Mehmood",
   "license": "ISC",
   "dependencies": {
+    "@fullcalendar/interaction": "^4.4.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "ejs": "^3.0.1",
@@ -23,6 +24,7 @@
     "express-session": "^1.17.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.2",
-    "req-flash": "0.0.3"
+    "req-flash": "0.0.3",
+    "serve-favicon": "^2.5.0"
   }
 }
