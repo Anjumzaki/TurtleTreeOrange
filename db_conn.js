@@ -1,26 +1,28 @@
 const mysql = require("mysql");
 const db = {
-  host: "us-cdbr-iron-east-04.cleardb.net",
-  user: "bab72eeff1d27f",
-  password: "1c47309a",
-  database: "heroku_86d908a082005e5",
-  port: 3306
+  host: "us-cdbr-east-02.cleardb.com",
+  user: "b69bcc47d6bb4e",
+  password: "f5ae7a94",
+  database: "heroku_b3dc40c998c614e",
+  port: 3306,
 };
+//b69bcc47d6bb4e:f5ae7a94@us-cdbr-east-02.cleardb.com/heroku_b3dc40c998c614e?reconnect=true
 // db.connect((err) => {
+
 //     if(err){
 //         throw err;
 //     }else{
 //         console.log("database connected");
 //     }
 // });
-var connection;
+mysql: var connection;
 
 function handleDisconnect() {
   connection = mysql.createConnection(db); // Recreate the connection, since
 
   // the old one cannot be reused.
 
-  connection.connect(function(err) {
+  connection.connect(function (err) {
     // The server is either down
     if (err) {
       // or restarting (takes a while sometimes).
@@ -31,7 +33,7 @@ function handleDisconnect() {
     } // to avoid a hot loop, and to allow our node script to
   }); // process asynchronous requests in the meantime.
   // If you're also serving http, display a 503 error.
-  connection.on("error", function(err) {
+  connection.on("error", function (err) {
     console.log("db error", err);
     if (err.code === "PROTOCOL_CONNECTION_LOST") {
       // Connection to the MySQL server is usually
@@ -42,8 +44,6 @@ function handleDisconnect() {
     }
   });
   global.db = connection;
-
 }
-
 
 handleDisconnect();
